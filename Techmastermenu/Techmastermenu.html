@@ -1,0 +1,1311 @@
+
+<body>
+    <link rel="stylesheet" type="text/css" href="stylemenu.css">
+    <div class="container-fluid" id="header">
+        
+        <header>
+            <style type="text/css">
+                .navbar {
+                    border: none!important;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    justify-content: space-between!important
+                }
+        
+                .logo-brand img {
+                    width: 120px
+                }
+        
+                .parent-menu.desktop {
+                    height: 100%;
+                    flex: initial
+                }
+        
+                .parent-menu.desktop .list-menu {
+                    margin-bottom: 0!important;
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center
+                }
+        
+                .desktop.parent-menu .parent-menu-item {
+                    color: #fff;
+                    margin: 0 10px 0 10px;
+                    text-transform: uppercase;
+                    position: relative;
+                    min-height: 60px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    font-size: 1.1rem
+                }
+        
+                .nav-indicator {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 5px;
+                    background-color: #fff
+                }
+        
+                .nav-padding {
+                    padding: 0 3px
+                }
+        
+                .desktop.parent-menu li:last-child {
+                    margin-right: 0
+                }
+        
+                .shopping-cart-top-menu {
+                    font-size: 1.4rem!important;
+                    padding-right: 1rem;
+                    cursor: pointer
+                }
+        
+                .user-top-menu {
+                    padding-left: 1rem;
+                    font-size: 1.4rem!important;
+                    cursor: pointer
+                }
+        
+                .parent-menu a {
+                    color: #fff
+                }
+        
+                .desktop.parent-menu li:hover>a {
+                    text-decoration: none;
+                    color: #c4c4c4
+                }
+        
+                .parent-menu .dropdown-menu a {
+                    color: #464646;
+                    text-decoration: none;
+                }
+        
+                .parent-menu .dropdown-menu li:hover a {
+                    color: #fff
+                }
+        
+                .navbar-toggler {
+                    outline: 0!important
+                }
+        
+                .count-cart-item {
+                    position: absolute;
+                    top: -10px;
+                    left: 20px;
+                    background-color: #26a69a
+                }
+        
+                .dropdown-menu.active {
+                    display: flex
+                }
+        
+                .track-menu.active {
+                    display: flex
+                }
+        
+                .modal-dialog {
+                    margin-top: 5%
+                }
+                #advisory-modal .modal-banner {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    background-color: #1cb2ed;
+                    position: relative;
+                }
+                #advisory-modal .modal-banner .close {
+                    position: absolute;
+                    top: 4px;
+                    right: 4px;
+                    border: 1px solid #000;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 20px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                #advisory-modal .modal-header {
+                    padding: 1rem 1.5rem;
+                    border-bottom: none;
+                }
+                #advisory-modal h5 {
+                    margin-top: 0 !important;
+                }
+                #advisory-modal .modal__main-title{
+                    font-size: 24px !important;
+                }
+                #advisory-modal .modal__sub-title{
+                    font-size: 1rem;
+                    font-weight: 400;
+                    display: block;
+                    margin: .5rem 0;
+                }
+                #advisory-modal .modal-body {
+                    padding: 1rem 1.5rem;
+                    padding-top: 0;
+                }
+                #advisory-modal .modal-body input {
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0 1rem;
+                    transition: all .3s ease-out;
+                    color: #464646;
+                }
+                #advisory-modal .modal-body textarea {
+                    width: 100%;
+                    min-height: 200px;
+                    border: 1px solid #ccc;
+                    user-select: none;
+                    resize: none;
+                    padding: 1rem;
+                    color: #464646;
+                    transition: all .3s ease-out;
+                }
+                #advisory-modal .modal-body input:focus, #advisory-modal .modal-body textarea:focus {
+                    border: 1px solid #34465c;
+                }
+                #advisory-modal .advisory__btns {
+                    margin-top: 1rem;
+                }
+                #advisory-modal .advisory__btns button {
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    text-decoration: none !important;
+                    position: relative;
+                    z-index: 20;
+                    overflow: hidden;
+                }
+                #advisory-modal .advisory__btns .btn {
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    border-radius: 2px;
+                    -webkit-transition: 0.5s;
+                    -o-transition: 0.5s;
+                    transition: 0.5s;
+                    padding: 8px 25px !important;
+                    box-shadow: none;
+                    border: none;
+                }
+                #advisory-modal .advisory__btns button:nth-child(1) {
+                    border: 1px solid #34465c;
+                    color: #34465c;
+                }
+                #advisory-modal .advisory__btns button:nth-child(2) {
+                    position: relative;
+                    border: 1px solid #34465c;
+                    background-color: #34465c;
+                    color: #fff;
+                    margin-left: .5rem;
+                }
+                #advisory-modal .advisory__btns button:nth-child(2):after {
+                    background: #fff;
+                    content: "";
+                    height: 155px;
+                    left: -75px;
+                    opacity: .2;
+                    position: absolute;
+                    top: -50px;
+                    transform: rotate(35deg);
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                    width: 50px;
+                    z-index: -10;
+                }
+                #advisory-modal .advisory__btns button:nth-child(2):hover {
+                    color: #fff;
+                }
+                #advisory-modal .advisory__btns button:nth-child(2):hover:after {
+                    left: 120%;
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                }
+                ::placeholder {
+                    font-size: 14px;
+                }
+                .input__row {
+                position: relative;
+                margin-bottom: 10px;
+                }
+        
+                .input__row.success input {
+                border-color: #2ecc71;
+                }
+        
+                .input__row.error input {
+                border-color: #e74c3c;
+                }
+        
+                .input__row i {
+                visibility: hidden;
+                position: absolute;
+                top: 13px;
+                right: 10px;
+                }
+        
+                .input__row.success i.fa-check-circle {
+                color: #2ecc71;
+                visibility: visible;
+                }
+        
+                .input__row.error i.fa-exclamation-circle {
+                color: #e74c3c;
+                visibility: visible;
+                }
+        
+                .input__row small {
+                color: #e74c3c;
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+                visibility: hidden;
+                }
+        
+                .input__row.error small {
+                visibility: visible;
+                }
+                #forgot-password .modal-content,
+                #sign-in-div,
+                #sign-up-div {
+                    padding: 3rem
+                }
+        
+                #modal-signin .nav-tabs .nav-link {
+                    border-top-left-radius: 2px;
+                    border-top-right-radius: 2px;
+                    text-align: center;
+                    color: #464646;
+                    background-color: #1e3c740f;
+                    padding: 1rem
+                }
+        
+                #modal-signin .nav-tabs .nav-link.active {
+                    background-color: #fff
+                }
+        
+                .modal-login-item {
+                    margin-bottom: 2rem
+                }
+        
+                .modal-login-item input {
+                    border: none;
+                    border-bottom: 1px solid #9e9e9e;
+                    width: 100%
+                }
+        
+                .modal-login-item-half {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 5px
+                }
+        
+                .btn-login-modal {
+                    letter-spacing: .5px;
+                    border-radius: 4px;
+                    padding: .5rem 1rem;
+                    width: 100%;
+                    text-transform: uppercase
+                }
+        
+                #overlay {
+                    position: fixed;
+                    background-color: #000;
+                    opacity: .7;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 998;
+                    display: none;
+                    transition: 1s;
+                    transition-timing-function: ease
+                }
+        
+                .mobile {
+                    display: none
+                }
+        
+                #forgot-password {
+                    display: none
+                }
+        
+                .checkbox-remember-me {
+                    display: block;
+                    position: relative;
+                    padding-left: 25px;
+                    margin-bottom: 12px
+                }
+        
+                .checkbox-remember-me input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0
+                }
+        
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    background-color: #1e3c741f
+                }
+        
+                .checkbox-remember-me input:checked~.checkmark {
+                    background-color: #3c78e8
+                }
+        
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none
+                }
+        
+                .checkbox-remember-me input:checked~.checkmark:after {
+                    display: block
+                }
+        
+                .checkbox-remember-me .checkmark:after {
+                    left: 8px;
+                    top: 4px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid #fff;
+                    border-width: 0 3px 3px 0;
+                    transform: rotate(45deg)
+                }
+        
+                #sign-in-div .fab {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    color: #fff;
+                    overflow: hidden;
+                    margin: 0 10px 0 10px
+                }
+        
+                #sign-in-div .fab img {
+                    height: 100%;
+                    width: 40px
+                }
+        
+                .user-dropdown-avatar {
+                    overflow: hidden;
+                    padding-left: 1rem;
+                    cursor: pointer;
+                    width: 3rem;
+                    height: 2rem
+                }
+        
+                .user-dropdown-avatar img {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%
+                }
+        
+                .dropdown-menu {
+                    top: 100%;
+                    position: absolute;
+                    left: auto;
+                    right: 0;
+                    display: none;
+                    flex-flow: column;
+                    width: 200px;
+                    padding: 0;
+                    box-shadow: rgba(0, 0, 0, .15) 0 0 10px;
+                    border: none;
+                    margin-top: .25rem
+                }
+        
+                .dropdown-menu a,
+                .track-menu a {
+                    text-decoration: none
+                }
+        
+                .dropdown-menu li {
+                    width: 100%;
+                    text-align: center;
+                    color: #464646!important;
+                    padding: .7rem 1rem;
+                    cursor: pointer;
+                    text-transform: none
+                }
+        
+                .dropdown-menu li:hover {
+                    background-color: #c4c4c4;
+                    color: #fff!important
+                }
+        
+                .track-menu {
+                    border-radius: 4px;
+                    background-color: #fff;
+                    margin-top: .25rem;
+                    background-clip: padding-box;
+                    list-style: none;
+                    text-align: left;
+                    font-size: 1rem;
+                    float: left;
+                    z-index: 1000;
+                    top: 100%;
+                    width: 500px;
+                    position: absolute;
+                    display: none;
+                    flex-flow: column;
+                    padding: .5rem 0;
+                    box-shadow: rgba(0, 0, 0, .15) 0 0 10px
+                }
+        
+                .track-menu li {
+                    width: 100%;
+                    padding: .7rem 1rem;
+                    cursor: pointer;
+                    text-transform: none
+                }
+        
+                .track-menu a {
+                    color: #464646!important
+                }
+        
+                .track-menu a:hover {
+                    color: #3c78e8!important
+                }
+        
+                .shopping-cart-mobile {
+                    cursor: pointer;
+                    position: fixed;
+                    height: 45pt;
+                    width: 45pt;
+                    padding: 0;
+                    z-index: 900;
+                    text-align: center;
+                    bottom: 70pt;
+                    right: 18pt;
+                    color: #fff;
+                    border-radius: 50%;
+                    background-color: #26a69a;
+                    box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
+                    -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, .15)
+                }
+        
+                .shopping-cart-mobile .fa-shopping-cart {
+                    position: absolute;
+                    top: 14pt;
+                    right: 9pt;
+                    font-size: 30px
+                }
+        
+                .count-cart-item-mobile {
+                    position: absolute;
+                    font-size: 1.2rem;
+                    top: -15pt;
+                    right: -2pt;
+                    color: #464646;
+                    background-color: transparent
+                }
+        
+                .parent-menu a {
+                    font-size: .95rem!important
+                }
+        
+                .fb_customer_chat_bounce_in_v2 {
+                    bottom: 113pt!important
+                }
+        
+                @media (max-width:1199px) {
+                    .desktop.parent-menu .parent-menu-item {
+                        margin: 0 5px 0 5px
+                    }
+                }
+        
+                @media (max-width:1366px) {
+                    .logo-brand img {
+                        width: 100px
+                    }
+                    .desktop.parent-menu .parent-menu-item {
+                        min-height: 54px
+                    }
+                    .nav-indicator {
+                        height: 4px
+                    }
+                    .parent-menu a {
+                        font-size: .9rem!important
+                    }
+                }
+        
+                @media (max-width:991px) {
+                    .navbar {
+                        padding: 15px 10px
+                    }
+                    .user-dropdown-avatar {
+                        padding-left: 0;
+                        text-align: center
+                    }
+                    .logo-brand {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%)
+                    }
+                    .parent-menu.mobile {
+                        font-size: 1rem;
+                        position: fixed;
+                        width: 250px;
+                        height: 100%;
+                        left: -250px;
+                        z-index: 999;
+                        background-color: #fff;
+                        top: 0;
+                        align-items: center;
+                        transition: .4s
+                    }
+                    .parent-menu.mobile ul {
+                        padding: 0
+                    }
+                    .parent-menu.mobile li {
+                        height: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 10px 25px
+                    }
+                    .parent-menu.mobile a {
+                        color: #464646
+                    }
+                    .parent-menu.mobile .active {
+                        background-color: #c4c4c4
+                    }
+                    .parent-menu.mobile .active a {
+                        color: #fff
+                    }
+                    .parent-menu.mobile a:hover {
+                        text-decoration: none
+                    }
+                    .desktop,
+                    .nav-indicator {
+                        display: none
+                    }
+                    .mobile {
+                        display: block
+                    }
+                }
+        
+                @media (min-width:576px) {
+                    #modal-signin .modal-dialog {
+                        max-width: 400px
+                    }
+                }
+        
+                @media (max-width:576px) {
+                    .shopping-cart-mobile {
+                        width: 50px;
+                        height: 50px
+                    }
+                    .shopping-cart-mobile .fa-shopping-cart {
+                        position: absolute;
+                        top: 11pt;
+                        right: 7pt;
+                        font-size: 27px
+                    }
+                }
+        
+                #advisory-modal input {
+                    border: none;
+                    border-bottom: 1px solid #dee2e6;
+                    width: 100%
+                }
+        
+                #advisory-modal input:not(:last-child) {
+                    margin-bottom: 1rem
+                }
+        
+                .admin-page,
+                .teacher-page {
+                    display: none
+                }
+        
+                .required-info-body {
+                    padding: 1.5rem;
+                    border-radius: 4px;
+                    background-color: #f2f8fd;
+                    text-align: center
+                }
+        
+                .required-info-footer {
+                    padding: .5rem 1.5rem;
+                    border-top: 1px solid #dedede
+                }
+        
+                .required-info-icon {
+                    color: grey;
+                    margin-bottom: .4rem
+                }
+        
+                #required-info-input {
+                    margin-top: 1.5rem
+                }
+            </style>
+        
+            
+            <div class="nav-bar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="logo-brand">
+                        <a href="/">
+                            <img src="https://techmaster.vn/resources/image/new_logo.png" alt="logo">
+                        </a>
+                    </div>
+        
+                    
+                    
+                    <div class="parent-menu desktop">
+                        <ul class="list-menu">
+                            
+                            
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/khoa-hoc/truc-tuyen">
+                                <a href="/khoa-hoc/truc-tuyen" class="nav-padding">
+                                    <span>Trực tuyến</span>
+                                </a>
+                                
+                            </li>
+                            
+                            
+                            
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/khoa-hoc/phong-lab">
+                                <a href="/khoa-hoc/phong-lab" class="nav-padding">
+                                    <span>Phòng lab</span>
+                                </a>
+                                
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/san-pham-hoc-vien">
+                                <a href="/san-pham-hoc-vien" class="nav-padding">
+                                    <span>Sản phẩm học viên</span>
+                                </a>
+                                
+                            </li>
+                            
+                            
+                            
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/trungtam/lich-khai-giang">
+                                <a href="/trungtam/lich-khai-giang" class="nav-padding">
+                                    <span>Khai giảng</span>
+                                </a>
+                                
+                            </li>
+                            
+                            
+                            
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/posts">
+                                <a href="/posts" class="nav-padding">
+                                    <span>Blog</span>
+                                </a>
+                                
+                            </li>
+                            
+                            
+                            
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/trai-nghiem">
+                                <a href="/trai-nghiem" class="nav-padding">
+                                    <span>Trải nghiệm</span>
+                                </a>
+                                
+                            </li>
+                            
+                            
+                            
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/viec-lam">
+                                <a href="/viec-lam" class="nav-padding">
+                                    <span>Việc làm</span>
+                                </a>
+                                
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+                    </div>
+        
+                    
+        
+                    
+        
+                    
+                </nav>
+        
+                
+            </div>
+        
+            
+        
+            
+             <script>
+                
+                $(document).on('click', function (e) {
+                    let target = e.target;
+                    if (!$(target.closest('.parent-menu-item')).attr('data-dropdown')) {
+                        $('.dropdown-menu').hide()
+                        $('.track-menu').hide()
+                    }
+        
+                    if ($(target.closest('.parent-menu-item')).attr('data-dropdown') == 'submenu-dropdown-1') {
+                        $('.dropdown-menu').hide()
+                    }
+        
+                    if ($(target.closest('.parent-menu-item')).attr('data-dropdown') == 'submenu-dropdown-6') {
+                        $('.track-menu').hide()
+                        $('.parent-menu.desktop .user-dropdown-avatar').next('.dropdown-menu').hide()
+                    }
+                })
+        
+                $('[data-toggle="popover"]').popover()
+        
+                $(document).ready(function () {
+                    if ($('.navbar-user-avatar-img').attr('src') == "") {
+                        $('.navbar-user-avatar-img').attr('src', '/resources/image/anonymous-user.jpg')
+                    }
+                })
+        
+                 
+                document.addEventListener('DOMContentLoaded', function () {
+                    var current = window.location.pathname;
+                    
+                    var items = $(".parent-menu-item")
+                    for (let item of items) {
+                        if ($(item).attr('data-href') !== undefined && $(item).attr('data-href') === current && current !== "/gio-hang" && current !== "/") {
+                            $(item).addClass("active")
+                            $(item).append(`
+                                <span class="nav-indicator"></span>
+                            `)
+                        }
+                    }
+                }, false)
+        
+                function ShowSubMenu(elem) {
+                    let dropdown = $(elem).children('.dropdown-menu');
+                    let trackMenu = $(elem).children('.track-menu');
+                    let mobileDropdown = $(elem).next('.parent-menu-item');
+                    $(dropdown).toggle();
+                    $(trackMenu).toggle();
+                    if ($(mobileDropdown).attr('data-name') !== undefined) {
+                        $(mobileDropdown).toggle();
+                    }
+                }
+        
+                function ShowUserMenu(elem) {
+                    id = $(elem).data("dropdown")
+                    if ($('#' + id).css('display') == 'none') {
+                        $.ajax({
+                            url: "/get-site-can-access",
+                            type: "GET",
+                            success: function (data) {
+                                if (data.Teacher) {
+                                    $('.teacher-page').show()
+                                }
+                                if (data.Admin) {
+                                    $('.admin-page').show()
+                                }
+                                $('#' + id).css('display', 'flex');
+                            },
+                            error: function (data) {
+                                $('#' + id).css('display', 'flex');
+                            }
+                        });
+                    } else {
+                        $('.admin-page').hide()
+                        $('.teacher-page').hide()
+                        $('#' + id).hide();
+                    }
+                }
+        
+                $('.navbar-toggler').click(function () {
+                    $('#overlay').show()
+                    $('#mySidenav').css("left", "0")
+                })
+        
+                $('#overlay').click(function (e) {
+                    $("#mySidenav").css("left", "-250px")
+                    $('#sign-up').hide()
+                    $('#sign-in').hide()
+                    $('#forgot-password').hide()
+                    $('#overlay').hide()
+                })
+        
+                function openForgotPassword() {
+                    $('#modal-signin').modal('hide')
+                    $('#forgot-password').modal()
+                }
+        
+                /*------------------ Đăng nhập, đăng ký, quên mật khẩu, đăng xuất ---------------------*/
+                $('#btn-sign-in').click(function (event) {
+                    signInFunc()
+                })
+        
+                $('#btn-sign-up').click(function () {
+                    email = $('#sign-up-email').val()
+                    phone = $('#sign-up-phone').val()
+                    password = $('#sign-up-password').val()
+                    retype = $('#sign-up-retype-password').val()
+                    fullname = $('#sign-up-fullname').val()
+                    if (!validateEmail(email)) {
+                        toastr.warning('Định dạng email không hợp lệ')
+                        return
+                    }
+                    if (!validatePhone(phone)) {
+                        toastr.warning('Định dạng số điện thoại không hợp lệ')
+                        return
+                    }
+                    if (password.length == 0) {
+                        toastr.warning('Vui lòng nhập mật khẩu')
+                        return
+                    }
+                    if (retype.length == 0) {
+                        toastr.warning('Vui lòng gõ lại mật khẩu')
+                        return
+                    }
+                    if (retype != password) {
+                        toastr.warning('Mật khẩu gõ lại chưa trùng khớp')
+                        return
+                    }
+                    if (fullname.length == 0) {
+                        toastr.warning('Vui lòng nhập họ tên')
+                        return
+                    }
+                    var req = {
+                        Email: email,
+                        Password: password,
+                        FullName: fullname,
+                        Phone: phone,
+                    };
+                    var myJSON = JSON.stringify(req);
+                    $.ajax({
+                        url: "/sign-up",
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        data: myJSON,
+                        dataType: "json",
+                        success: function (data) {
+                            toastr.success("Đăng ký tài khoản thành công. Một email kích hoạt đã được gửi vào hòm thư của bạn.")
+                            $('#sign-up-email').val('')
+                            $('#sign-up-phone').val('')
+                            $('#sign-up-password').val('')
+                            $('#sign-up-retype-password').val('')
+                            $('#sign-up-fullname').val('')
+                            $('#modal-signin').modal('hide')
+                        },
+                        error: function (xhr) {
+                            toastr.warning(xhr.responseJSON.message)
+                        }
+                    });
+                })
+        
+                $('#btn-forgot-password').click(function () {
+                    email = $('#forgot-password-email').val()
+                    if (!validateEmail(email)) {
+                        toastr.warning('Định dạng email không hợp lệ')
+                        return
+                    }
+                    var req = {
+                        Email: email,
+                    };
+                    var myJSON = JSON.stringify(req);
+                    $.ajax({
+                        url: "/forgot-password",
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        data: myJSON,
+                        dataType: "json",
+                        success: function (data) {
+                            toastr.success("Một email hướng dẫn sẽ được gửi đến bạn trong vài phút tới. Vui lòng kiểm tra email.")
+                            $('#forgot-password').modal('hide')
+                            $("#forgot-password-email").val("")
+                        },
+                        error: function (xhr) {
+                            toastr.warning(xhr.responseJSON.message)
+                        }
+                    });
+                })
+        
+                $('.choose-sign-out').click(function (event) {
+                    event.preventDefault()
+                    $.ajax({
+                        url: "/logout",
+                        type: "GET",
+                        contentType: "application/json; charset=utf-8",
+                        success: function (data) {
+                            window.location.replace("/");
+                        },
+                        error: function (xhr) {
+                            toastr.warning(xhr.responseJSON.message)
+                        }
+                    });
+                })
+        
+                // $('#sign-in-email').keyup(function (event) {
+                // 	value = $(this).val()
+                // 	$(this).val(value.toLowerCase().replace(" ", ""))
+                // })
+        
+                $('#sign-up-email').keyup(function (event) {
+                    value = $(this).val()
+                    $(this).val(value.toLowerCase().replace(" ", ""))
+                })
+        
+                function signInFunc() {
+                    event.preventDefault()
+                    email = $('#sign-in-email').val()
+                    password = $('#sign-in-password').val()
+                    if (!validateEmail(email)) {
+                        toastr.warning('Định dạng email không hợp lệ')
+                        return
+                    }
+                    if (password.length == 0) {
+                        toastr.warning('Vui lòng nhập mật khẩu')
+                        return
+                    }
+                    var req = {
+                        Email: email,
+                        Password: password,
+                        Remember: $('#sign-in-remember').prop('checked'),
+                    };
+                    var myJSON = JSON.stringify(req);
+                    $.ajax({
+                        url: "/login",
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        data: myJSON,
+                        dataType: "json",
+                        success: function (data) {
+                            $('#modal-signin').modal('hide')
+                                toastr.success("Đăng nhập thành công")
+                                setTimeout(function() {
+                                    location.reload();
+                                }, 500)
+                            // if (data == true) {
+                            // 	$('#modal-signin').modal('hide')
+                            // 	toastr.success("Đăng nhập thành công")
+                            // 	setTimeout(function() {
+                            // 		location.reload();
+                            // 	}, 500)
+                            // } else {
+                            // 	$('#modal-signin').modal('hide')
+                            // 	$('#required-info-update').modal('show')
+                            // }			
+                        },
+                        error: function (xhr) {
+                            toastr.warning(xhr.responseJSON.message)
+                        }
+                    });
+                }
+        
+                $('.required-info-btn').click(function() {
+                    var phone = $('#required-info-input').val()
+                    if (!validatePhone(phone)) {
+                        toastr.warning('Định dạng số điện thoại không hợp lệ')
+                        return
+                    }
+                    var req = {
+                        Phone: phone,
+                    };
+                    var myJSON = JSON.stringify(req);
+                    $.ajax({
+                        url: "/update-required-info",
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        data: myJSON,
+                        dataType: "json",
+                        success: function (data) {
+                            toastr.success("Cập nhật thành công")
+                            setTimeout(function() {
+                                location.reload();
+                            }, 500)
+                        },
+                        error: function (xhr) {
+                            toastr.warning("Đã có lỗi xảy ra. Bạn vui lòng truy vào profile để thực hiện cập nhật.")
+                        }
+                    });
+                })
+        
+                $('#sign-in-email, #sign-in-password').bind("enterKey", function (e) {
+                    signInFunc()
+                });
+                $('#sign-in-email, #sign-in-password').keyup(function (e) {
+                    if (e.keyCode == 13) {
+                        $(this).trigger("enterKey");
+                    }
+                });
+        
+                /*----------------- Chuyển site -------------------*/
+                function GoToSite(li) {
+                    window.location.replace($(li).data('href'))
+                }
+        
+                function GoToAdminSite() {
+                    window.location.replace("/admin");
+                }
+        
+                function GoToTeacherSite() {
+                    window.location.replace("/teacher");
+                }
+        
+                $('.choose-user-profile').click(function (event) {
+                    window.location.replace("/user/dashboard");
+                })
+        
+                $('.choose-user-classes').click(function (event) {
+                    window.location.replace("/user/dashboard/khoa-hoc");
+                })
+        
+                $('.choose-active-order').click(function (event) {
+                    window.location.replace("/kich-hoat-don-hang");
+                })
+        
+                $('.choose-user-profile').click(function (event) {
+                    window.location.replace("/user/dashboard/profile");
+                })
+        
+                /*--------------- Đăng nhập bên thứ 3 -----------------*/
+                $('.github-sign-in').click(function () {
+                    window.location.href = 'https://github.com/login/oauth/authorize?client_id=Iv1.cd5b5722dbe9629b'
+                })
+        
+                $('.facebook-sign-in').click(function () {
+                    FB.getLoginStatus(function (r) {
+                        if (r.status === 'connected') {
+                            var req = {
+                                AccessToken: r.authResponse.accessToken,
+                            };
+                            var myJSON = JSON.stringify(req);
+                            $.ajax({
+                                url: "/login-facebook",
+                                type: "POST",
+                                contentType: "application/json; charset=utf-8",
+                                data: myJSON,
+                                dataType: "json",
+                                success: function (data) {
+                                    location.reload();
+                                    // if (data == true) {
+                                    // 	location.reload();
+                                    // } else {
+                                    // 	$('#modal-signin').modal('hide')
+                                    // 	$('#required-info-update').modal('show')
+                                    // }	
+                                },
+                                error: function (xhr) {
+                                    toastr.warning(xhr.responseJSON.message)
+                                    closeModal()
+                                }
+                            });
+                        } else {
+                            FB.login(function (response) {
+                                if (response.authResponse) {
+                                    var req = {
+                                        AccessToken: response.authResponse.accessToken,
+                                    };
+                                    var myJSON = JSON.stringify(req);
+                                    $.ajax({
+                                        url: "/login-facebook",
+                                        type: "POST",
+                                        contentType: "application/json; charset=utf-8",
+                                        data: myJSON,
+                                        dataType: "json",
+                                        success: function (data) {
+                                            location.reload();
+                                        },
+                                        error: function (xhr) {
+                                            toastr.warning(xhr.responseJSON.message)
+                                            closeModal()
+                                        }
+                                    });
+                                } else {
+                                    closeModal()
+                                }
+                            }, { scope: 'email' });
+                        }
+                    });
+                })
+        
+                $('.google-sign-in').click(function () {
+                    gapi.load('auth2', function(){
+                        gapi.auth2.authorize({
+                            client_id: `1088344376413-1aveeq4dk7b3tsu0dmof1vh2idv6n3jk.apps.googleusercontent.com`,
+                            scope: 'profile email',
+                            response_type: 'id_token permission'
+                        }, function (response) {
+                            if (response.error) {
+                                toastr.warning("Lỗi không thể đăng nhập Google")
+                                return;
+                            }
+                            var req = {
+                                AccessToken: response.access_token,
+                            };
+                            var myJSON = JSON.stringify(req);
+                            $.ajax({
+                                url: "/login-google",
+                                type: "POST",
+                                contentType: "application/json; charset=utf-8",
+                                data: myJSON,
+                                dataType: "json",
+                                success: function (data) {
+                                    location.reload();
+                                    // if (data == true) {
+                                    // 	location.reload();
+                                    // } else {
+                                    // 	$('#modal-signin').modal('hide')
+                                    // 	$('#required-info-update').modal('show')
+                                    // }	
+                                },
+                                error: function (xhr) {
+                                    toastr.warning(xhr.responseJSON.message)
+                                    closeModal()
+                                }
+                            });
+                        });
+                    })
+                })
+        
+            // -------
+            const c_username = document.getElementById('advisory-name');
+            const c_email = document.getElementById('advisory-email');
+            const c_phone = document.getElementById('advisory-phone');
+            const c_note = document.getElementById('advisory-note');
+            const c_btn = document.getElementById('btn-submit-advisory');
+            const c_input = document.getElementsByClassName('input__row')
+        
+            var id_schedules, data_type
+            
+            $('body').on('click','#btn_register_advisory-modal', function() {
+                id_schedules = $(this).parents('.class-info').find('.class-title a').attr('data-id')
+                data_type = $(this).parents('.class-info').find('.class-title a').attr('data-type')
+            })
+        
+            // -------
+            c_btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                let isValid = checkInputs();
+        
+                if (isValid) {
+                    let id, type
+                    let pathname = window.location.pathname
+                    if(pathname === "/trungtam/lich-khai-giang") {
+                        id = id_schedules
+                        type = parseInt(data_type)
+        
+                    } else {
+                        let pathnameArr = pathname.split('/')
+                        if(pathnameArr[1] === "khoa-hoc") {
+                            id = pathnameArr[2]
+                            type = 1
+                        }
+                    }
+        
+                    let usernameValue = c_username.value
+                    let emailValue = c_email.value
+                    let phoneValue = c_phone.value
+                    let noteValue = c_note.value
+                    
+                    let req = {
+                        FullName: usernameValue,
+                        Email : emailValue,
+                        Phone : phoneValue,
+                        Info : noteValue,
+                        Link : window.location.href,
+                        ItemId : id,
+                        Type : type
+                    };
+        
+                    let myJSON = JSON.stringify(req);
+        
+                    // console.log(req);
+        
+                    $.ajax({
+                        url: "/submit-advisory",
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        data: myJSON,
+                        dataType: "json",
+                        success: function (data) {
+                            $('#advisory-name, #advisory-email, #advisory-phone, #advisory-note').val("")
+                            $('.input__row').removeClass('success')
+                            toastr.success(data)
+                            $('#advisory-modal').modal('hide')
+                        },
+                        error: function (result) {
+                            toastr.error(result.responseJSON.message)
+                        }
+                    });
+                }
+            });
+            //-----
+            function checkInputs() {
+                const usernameValue = c_username.value.trim();
+                const emailValue = c_email.value.trim();
+                const phoneValue = c_phone.value.trim();
+        
+                let isValid = true
+        
+                if (usernameValue === '') {
+                    setErrorFor(c_username, 'Tên không được để trống.');
+                    isValid = false
+                } else {
+                    setSuccessFor(c_username);
+                }
+        
+                if (emailValue === '') {
+                    setErrorFor(c_email, 'Email không được để trống');
+                    isValid = false
+                } else if (!isEmail(emailValue)) {
+                    setErrorFor(c_email, 'Email không đúng định dạng');
+                    isValid = false
+                } else {
+                    setSuccessFor(c_email);
+                }
+        
+                if (phoneValue === '') {
+                    setErrorFor(c_phone, 'Số điện thoại không được để trống');
+                    isValid = false
+                } else {
+                    setSuccessFor(c_phone);
+                }
+        
+                return isValid
+        
+            }
+        
+            //-----
+            function setErrorFor(input, message) {
+                const formInput = input.parentElement;
+                const small = formInput.querySelector('small');
+                formInput.className = 'input__row error';
+                small.innerText = message;
+            }
+        
+            function setSuccessFor(input) {
+                const formInput = input.parentElement;
+                formInput.className = 'input__row success';
+            }
+        
+            function isEmail(email) {
+                return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+            }
+            </script>
+        </header>
+        
+            </div>
+</body>
