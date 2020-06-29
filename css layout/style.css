@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 24px;
+    
+}
+
+body {
+    background-color: #E5E5E5;
+    
+}
+
+.box {
+    border: 2px solid #888888;
+    border-top-width: 5px;
+}
+
+.info {
+    width: 70%;
+    float: left;
+    border-color: #767676;
+    height: 400px;
+    text-align: center;
+}
+
+
+.contact {
+    float: right;
+    width: 30%;
+    height: 200px;
+    border-color: #ff7766;
+    text-align: center;
+}
+
+
+.company {
+    width: 30%;
+    float: right;
+    height: 200px;
+    border-color: #59f9f9;
+    text-align: center;
+}
+
+.a {
+    border: 2px solid #888888;
+    border-top-width: 5px;
+}
+.one {
+    width: 68.84%;
+    float: left;
+    border-color: #767676;
+    height: 400px;
+    text-align: center;
+    margin-right:15px;
+}
+
+.two {
+    float: right;
+    width: 30%;
+    height: 200px;
+    border-color: #ff7766;
+    text-align: center;
+}
+
+.three {
+    width: 30%;
+    float: right;
+    height: 200px;
+    border-color: #59f9f9;
+    text-align: center;
+}
+
+.b {
+    border: 2px solid #888888;
+    border-top-width: 5px;
+}
+
+.four {
+    width: 33.3%;
+    float: left;
+    border-color: #767676;
+    height: 400px;
+    text-align: center;
+}
+
+.five {
+    float: left;
+    width: 33.3%;
+    height: 400px;
+    border-color: #ff7766;
+    text-align: center;
+}
+
+.six {
+    width: 33.3%;
+    float: right;
+    height: 400px;
+    border-color: #59f9f9;
+    text-align: center;
+}
+
+.c {
+    border: 2px solid #888888;
+    border-top-width: 5px;
+}
+
+.seven {
+    width: 30%;
+    float: left;
+    border-color: #767676;
+    height: 400px;
+    text-align: center;
+    margin-right: 65px;
+}
+
+.eight {
+    float: left;
+    width: 30%;
+    height: 400px;
+    border-color: #ff7766;
+    text-align: center;
+}
+
+.nine {
+    width: 30%;
+    float: right;
+    height: 400px;
+    border-color: #59f9f9;
+    text-align: center;
+    margin-left: 65px ;
+}
