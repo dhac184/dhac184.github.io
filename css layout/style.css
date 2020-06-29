@@ -44,32 +44,35 @@ body {
 }
 
 .a {
+    display: inline;
     border: 2px solid #888888;
     border-top-width: 5px;
 }
 .one {
-    width: 68.84%;
+    width: 70%;
     float: left;
     border-color: #767676;
     height: 400px;
     text-align: center;
-    margin-right:15px;
+
 }
 
 .two {
     float: right;
-    width: 30%;
+    width: 28%;
     height: 200px;
     border-color: #ff7766;
     text-align: center;
+    margin-left:15px;
 }
 
 .three {
-    width: 30%;
+    width: 28%;
     float: right;
     height: 200px;
     border-color: #59f9f9;
     text-align: center;
+    margin-left:15px;
 }
 
 .b {
