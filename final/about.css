@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+* {
+    box-sizing: border-box;
+}
+
+#topbar {
+    width: 100%;
+    padding:30px 0;
+    z-index: 999;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+.menu {
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu li {
+    display: block;
+    transition: ease-in 0.2s;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+    margin-right: 50px;
+}
+
+#left {
+    width: 250px;
+    float: left
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu li:nth-child(2){
+    padding-top: 15px;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+    padding-top: 15px;
+}
+#one:hover {
+    color: #fff299;
+    transition: ease-out 0.2s;
+    font-size: 22px;
+}
+
+#two:hover {
+    color: #30CFD0;
+    transition: ease-in 0.2s;
+    font-size: 22px;
+}
+
+#three:hover {
+    color: #330867;
+    transition: ease-in 0.2s;
+    font-size: 22px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0px auto;
+}
+
+.view {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.box {
+    float: left;
+    position: relative;
+    width: 1100px;
+    
+}
+
+.background {
+    background-image: url(profile.jpg);
+    height: 1000px;
+    padding: 15.2% 28.5%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+.overlay {
+    background: rgba(255,255,255,0.7);
+    margin-top: 30%;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 10px solid white;
+}
+
+.overlay-inner {
+    vertical-align: middle;
+    display: table-cell;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    border-bottom: 1px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+*{
+    box-sizing: border-box;
+}
+
+#topbar {
+    position: absolute;
+    width: 100%;
+    padding:30px 0;
+    z-index: 999;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+
+.menu {
+   
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding-right: 25px;
+    border-right: 1px solid;
+    transition: ease-in 0.2s;
+}
+
+.menu li:nth-child(2){
+    padding-left: 25px;
+}
+
+.menu li:last-child {
+    border-right: none;
+    padding-left: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#one:hover {
+    color: #fff299;
+    transition: ease-out 0.2s;
+    font-size: 22px;
+}
+
+#two:hover {
+    color: #30CFD0;
+    transition: ease-in 0.2s;
+    font-size: 22px;
+}
+
+#three:hover {
+    color: #330867;
+    transition: ease-in 0.2s;
+    font-size: 22px;
+}
+
+#box {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-content {
+    text-align: center;
+    margin-top: -20px;
+}
+.box-content h1 {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    font-size: 72px;
+    background: linear-gradient(to right, #ffffcc 0%, #30CFD0 50%, #330867 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.box-content p {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    line-height: 35px;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+}
+
+
+  
